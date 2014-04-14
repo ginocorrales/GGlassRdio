@@ -120,6 +120,7 @@ public class ExampleActivity extends Activity implements RdioListener {
 		// Initialize our Rdio object.  If we have cached access credentials, then use them - otherwise
 		// Initialize w/ null values and the user will be prompted (if the Rdio app is installed), or
 		// we'll fallback to 30s samples.
+		
 		if (rdio == null) {
 			SharedPreferences settings = getPreferences(MODE_PRIVATE);
 			accessToken = settings.getString(PREF_ACCESSTOKEN, null);
